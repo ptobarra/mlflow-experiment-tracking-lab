@@ -1,0 +1,27 @@
+artifact_path: /home/ptobarra/projects/udemy_mlops_bootcamp_mlflowstarter/2-DLMLFLOW/mlruns/1/models/m-b29759b70ce543e3a9eb0ed1374d2f88/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.12.3
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.21.0
+    model_type: keras
+    save_format: tf
+is_signature_from_type_hint: false
+mlflow_version: 3.17.2
+model_id: m-b29759b70ce543e3a9eb0ed1374d2f88
+model_size_bytes: 28938
+model_uuid: m-b29759b70ce543e3a9eb0ed1374d2f88
+prompts: null
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 11]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-11-13 00:12:08.454355'

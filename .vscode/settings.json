@@ -1,0 +1,45 @@
+{
+    // Use the project's uv environment for code, notebooks and terminals
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+
+    // Pylance IntelliSense: completions, auto-imports, inline hints
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    // mlflow lazily loads submodules (mlflow.models, mlflow.tensorflow, ...) that
+    // aren't in its public exports, so Pylance wrongly flags them as private
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportPrivateImportUsage": "none"
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.functionReturnTypes": false,
+    "python.analysis.inlayHints.variableTypes": false,
+    "python.analysis.inlayHints.callArgumentNames": "off",
+
+    // Editor suggestions (also apply to notebook cells)
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "on"
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.parameterHints.enabled": true,
+    "editor.hover.enabled": "on",
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggest.preview": true,
+    "editor.suggest.showStatusBar": true,
+
+    // Jupyter: tooltips and completions from the live kernel
+    "notebook.inlayHints.enabled": false,
+    "jupyter.enableExtendedPythonKernelCompletions": true,
+
+    // Integrated terminal: command/argument/path suggestions as you type
+    "terminal.integrated.suggest.enabled": true,
+    "terminal.integrated.suggest.quickSuggestions": {
+        "commands": "on",
+        "arguments": "on",
+        "unknown": "off"
+    },
+    "terminal.integrated.shellIntegration.enabled": true
+}

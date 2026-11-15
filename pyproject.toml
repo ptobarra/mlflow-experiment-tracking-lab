@@ -1,0 +1,54 @@
+[project]
+name = "mlflow-experiment-tracking-lab"
+version = "0.1.0"
+description = "End-to-end MLOps with MLflow: experiment tracking, Hyperopt tuning, model registry and artifact management for scikit-learn and TensorFlow/Keras pipelines."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "ptobarra", email = "12190195+ptobarra@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+keywords = [
+    "mlops",
+    "mlflow",
+    "experiment-tracking",
+    "model-registry",
+    "hyperopt",
+    "tensorflow",
+    "keras",
+    "scikit-learn",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "hyperopt>=0.3.0",
+    "keras>=3.15.1",
+    "mlflow>=3.17.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "scikit-learn>=1.9.1",
+    "tensorflow[and-cuda]>=2.21.0",
+]
+
+[project.urls]
+Repository = "https://github.com/ptobarra/mlflow-experiment-tracking-lab"
+Issues = "https://github.com/ptobarra/mlflow-experiment-tracking-lab/issues"
+
+[project.scripts]
+mlflow-experiment-tracking-lab = "mlflow_experiment_tracking_lab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
